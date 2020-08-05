@@ -1,80 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-:root{
-    --subtitle-color: #636363;
-}
 
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #e5e5e5;
+    margin:0;
+    width: 100%;
     height: 100vh;
-    /* width: 100%; */
     display: flex;
-    align-items: center;
+    background: rgb(236, 236, 236);
+    display: flex;
     justify-content: center;
-    font-family: 'Roboto';
-}
-h3 {
-    font-size: 1.3em;
-    color: var(--subtitle-color);
-    font-weight: 100;
-}
-.main-container {
-    width: 600px;
-    height: 300px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    box-shadow: 0 0 10px grey ;
-}
-.cover-section {
-    width: 35%;
-    height: 70%;
-}
-.cover-section img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 10px;
-}
-.title-section{
-    width: 65%;
-    height: 70%;
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
-.title-section h1{
-    width: 80%;
-    margin: 0;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-.title-section h3 {
-    width: 80%;
-    margin: 0;
-}
-.rate-section {
-    width: 100%;
-    height: 30%;
-    border-top: 1px solid #dddddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.rate-left {
+.cover{
     width: 30%;
-    /* padding-left: 5%; */
+    height: 200px;
+    border:1px solid black;
+    background: white;
+    border-radius: 20px;
 }
-.rate-right {
-    width: 50%;
+.principal{
+    width: 100%;
+    height: 60%;
     display: flex;
-    justify-content: space-around;
+    border-bottom: 1px solid rgb(202, 202, 202);
 }
-.material-icons {
-    font-size: 2em;
-    color: var(--subtitle-color);
-    opacity: .5;
+.principal img{
+    width: 30%;
+    height: auto;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+.principal__descripcion{
+    width: 60%;
+    height: auto;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1{
+    margin-bottom: 0px;
+}
+h3{
+    margin-top: 0;
+    color: rgb(182, 182, 182);
+}
+
+/*=======================================================*/
+.secundaria{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.secundaria p{
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    color: rgb(182, 182, 182);
+}
+.secundaria__imagen{
+    width: auto;
+    height: auto;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.secundaria__imagen img{
+    width: 20px;
+    padding: 5px;
+    color: teal;
+    filter: opacity(30%);
 }
